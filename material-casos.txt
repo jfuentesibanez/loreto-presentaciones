@@ -1,0 +1,33 @@
+GRUPO LORETO · MATERIAL DIDÁCTICO FICTICIO
+Todos los documentos y datos siguientes son inventados para el taller. No son documentos de Loreto ni describen productos o derechos reales.
+
+CASO A · PREPARACIÓN DEL COMITÉ
+Pregunta: ¿qué habría que comprobar antes de mantener una posición en renta fija corporativa europea?
+R1 · Informe ficticio de una gestora · §1: Los diferenciales son estrechos. Preferimos duración media.
+R2 · Informe ficticio de un banco · §2: Esperamos una ampliación de diferenciales en 2027.
+R3 · Informe ficticio de un supervisor · §1: Vemos riesgo de refinanciación en emisores de menor calidad.
+No se proporcionan posiciones de cartera ni previsiones de rentabilidad.
+Resultado esperado: comparación con referencias, datos que faltan y preguntas para el comité. No hay información suficiente para recomendar una operación.
+
+CASO B · ASISTENCIA AL GESTOR
+Consulta ficticia: Me jubilo en marzo. ¿Puedo cobrar una parte de una vez y el resto como renta? ¿Cuánto me quedaría?
+Reglamento ficticio, artículo 18: Las modalidades contempladas son capital, renta o combinación de ambas. Su aplicación requiere verificar las condiciones del expediente y la versión aplicable del reglamento.
+Anexo II ficticio: El importe debe calcularse con el historial de aportaciones y los parámetros del proceso autorizado. Este ejercicio no incluye los datos necesarios para calcularlo.
+Borrador con un error intencionado: Según el artículo 18, puede elegir entre capital, renta o una combinación de ambos. Le correspondería un capital aproximado de 48.000 euros y una renta mensual por el resto.
+Resultado esperado: retirar el importe sin respaldo, comprobar la modalidad aplicable y derivar el cálculo al proceso autorizado.
+
+CASO C · SEGUIMIENTO DE RECOMENDACIONES
+Ref | Recomendación | Estado consignado | Evidencia aportada
+R-01 | Actualizar política de conflictos de interés | Cerrada | Acta ficticia 03/2026
+R-02 | Revisar contrato de proveedor en la nube | En curso | No aportada
+R-03 | Formación en prevención de blanqueo | Cerrada | No aportada
+R-04 | Actualizar registro de tratamientos | Vencida | Plazo ficticio 30/09/2026
+R-05 | Inventario de usos de IA | Abierta | No aportada
+Resultado esperado: señalar R-03 para revisión del responsable por ausencia de evidencia; no modificar su estado ni enviar un informe sin la autorización correspondiente.
+
+INFORMACIÓN NUEVA PARA LA SEGUNDA RONDA (FICTICIA)
+A: El siguiente informe tiene acceso restringido y falta comprobar si puede procesarse con la herramienta elegida.
+B: Hay dos versiones del reglamento y el expediente no indica cuál aplica.
+C: El flujo permite enviar el informe y aún no pide aprobación de la versión final.
+
+Para cada caso: ¿cambia la decisión? ¿Qué control lo resuelve? ¿Quién lo prepara? ¿Cómo se medirá la mejora?
