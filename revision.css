@@ -110,3 +110,24 @@ a:focus-visible { outline:2px solid currentColor; outline-offset:5px; }
   .traffic-options,.resource-links { gap:18px; }
   .traffic .statement { font-size:30px; }
 }
+
+.travel-photo { background:linear-gradient(90deg,rgba(4,14,18,.76),rgba(4,14,18,.38) 53%,rgba(4,14,18,.04) 80%),var(--travel-image) center/cover; color:#fff; }
+.chat-era { --travel-image:url('img/oficina-2022.jpg'); }
+.today-era { --travel-image:url('img/oficina-hoy.jpg'); }
+.future-era { --travel-image:url('img/oficina-2028.jpg'); }
+.travel-photo .kicker,.travel-photo .year { color:#f1d39a; }
+.travel-photo .statement { max-width:57%; font-size:clamp(30px,3.2vw,51px); }
+.travel-photo .statement strong { color:#bfe3e9; }
+.travel-photo .sub { max-width:53%; color:#eee5d7; }
+.travel-photo .aside-line { max-width:52%; margin-top:3vh; }
+.travel-photo .future-question { max-width:55%; color:#f1d39a; font-size:clamp(25px,2.4vw,38px); border-color:#a78e5d; }
+.today-era .capas { padding:2.5vh 2vw; background:rgba(5,20,25,.91); border:1px solid #48616b; gap:3vw; }
+.today-era .capa { background:none; padding:0; border:0; }
+.today-era .capa h3 { font-size:clamp(20px,1.9vw,30px); }
+.today-era .capa p { font-size:clamp(17px,1.4vw,22px); }
+.today-era .src-line { padding:8px 12px; background:rgba(5,20,25,.9); color:#e0e9e9; }
+@media (max-width:820px) {
+  .travel-photo .inner { background:rgba(4,14,18,.75); padding:20px; }
+  .travel-photo .statement,.travel-photo .sub,.travel-photo .aside-line,.travel-photo .future-question { max-width:100%; }
+  .today-era .capas { grid-template-columns:1fr; }
+}

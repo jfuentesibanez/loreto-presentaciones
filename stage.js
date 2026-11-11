@@ -87,7 +87,7 @@
     index = n;
     slides.forEach((s, k) => { s.classList.toggle('on', k === index); s.setAttribute('aria-hidden', String(k !== index)); s.inert = k !== index; });
     const s = slides[index];
-    document.body.classList.toggle('light-slide', s.matches('.chapter,.question,.future'));
+    document.body.classList.toggle('light-slide', s.matches('.chapter,.question,.future:not(.travel-photo)'));
     document.getElementById('barra').style.width = `${(index + 1) / slides.length * 100}%`;
     document.getElementById('pag').textContent = `${String(index + 1).padStart(2, '0')} / ${slides.length}`;
     status.textContent = `Diapositiva ${index + 1} de ${slides.length}. ${title(s, index)}`;
