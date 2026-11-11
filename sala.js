@@ -55,7 +55,7 @@
       document.querySelectorAll('.pizarra > div').forEach(d => out.push(`${d.querySelector('b').textContent}: ${txt(d.querySelector('.campo')) || '—'}`));
       out.push('', 'MATRIZ (viabilidad, valor · 0–100)');
       document.querySelectorAll('.matriz .punto').forEach(p => out.push(`${p.innerText.replace(/\s+/g, ' ').trim()}: ${parseFloat(p.style.left).toFixed(0)}, ${parseFloat(p.style.bottom).toFixed(0)}`));
-      out.push('', 'VOTOS');
+      if (document.querySelector('.votos')) out.push('', 'VOTOS');
       [...document.querySelectorAll('.votos button')].sort((a, b) => b.dataset.n - a.dataset.n)
         .forEach(b => out.push(`${b.dataset.n} · ${b.childNodes[1].textContent.trim()} (${b.querySelector('.area').textContent})`));
       out.push('', 'HOJA DE CIERRE');
@@ -67,3 +67,4 @@
     });
   });
 })();
+
