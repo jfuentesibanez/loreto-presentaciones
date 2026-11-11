@@ -12,7 +12,7 @@ Todos los ejemplos son ficticios. Sin dependencias externas: funciona sin conexi
 
 ## Versión revisada
 
-47 diapositivas. Apertura con un viaje 2006 → 2022 → hoy → 2028 (escenario imaginado), tres procesos a validar con la sala, propuestas participativas y tres pruebas en paralelo que se revisan tras recibir nueva información. La ficha se entrega impresa; sus diez campos no se proyectan.
+44 diapositivas. Viaje temporal, capacidades, fiabilidad y alucinaciones, priorización y métricas, riesgos y gobierno. Ocho momentos de participación oral, en parejas o a mano alzada; los criterios se revelan después de escuchar a la sala. Los tres casos se trabajan únicamente en los 45 minutos finales. La ficha existente se entrega impresa y no se proyecta.
 
 - `guion.html`: tiempos, transiciones, instrucciones y propuesta de demostración opcional.
 - `material-casos.txt`: fuentes y datos ficticios para ensayar los casos.
