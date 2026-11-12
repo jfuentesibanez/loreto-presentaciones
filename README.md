@@ -27,3 +27,7 @@ Brief de la imagen: fotografía editorial horizontal de una oficina española en
 ## Cierre visual
 
 «Dioses de arena»: cinco ilustraciones reutilizadas de la presentación de Ferrovial (arena, silicio, transistor, circuito integrado y GPU), convertidas a JPEG para la web. Son imágenes generadas con IA, no fotografías históricas. La secuencia y el cierre ocupan unos tres minutos dentro del horario previsto.
+
+## Refuerzo visual
+
+Siete diapositivas revisadas sin ampliar la sesión: dos aperturas con metáforas fotográficas generadas con IA y cinco diagramas editables en HTML/CSS. Se representan los componentes del agente, la cadena de evidencia, la medición del trabajo completo, el ciclo de gobierno y las tres decisiones del taller. Prompts y procedencia en `visual-prompts.md`.
