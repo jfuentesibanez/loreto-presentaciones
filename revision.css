@@ -168,7 +168,7 @@ a:focus-visible { outline:2px solid currentColor; outline-offset:5px; }
 .travel-photo { background:linear-gradient(90deg,rgba(4,14,18,.76),rgba(4,14,18,.38) 53%,rgba(4,14,18,.04) 80%),var(--travel-image) center/cover; color:#fff; }
 .chat-era { --travel-image:url('img/oficina-2022.jpg'); }
 .today-era { --travel-image:url('img/oficina-hoy.jpg'); }
-.future-era { --travel-image:url('img/oficina-2028.jpg'); }
+.future-era { --travel-image:url('img/oficina-2028-limpia.jpg'); }
 .travel-photo .kicker,.travel-photo .year { color:#f1d39a; }
 .travel-photo .statement { max-width:57%; font-size:clamp(30px,3.2vw,51px); }
 .travel-photo .statement strong { color:#bfe3e9; }
@@ -185,3 +185,18 @@ a:focus-visible { outline:2px solid currentColor; outline-offset:5px; }
   .travel-photo .statement,.travel-photo .sub,.travel-photo .aside-line,.travel-photo .future-question { max-width:100%; }
   .today-era .capas { grid-template-columns:1fr; }
 }
+
+/* Años consistentes en todas las paradas del viaje. */
+.today-era .capas { margin-top:3vh; }
+.future-era .future-question { margin-top:3vh; padding-top:2.5vh; }
+.agent-formula .statement { font-size:clamp(32px,3.7vw,59px); }
+.agent-formula .idea-grid { margin-top:4vh; row-gap:3vh; }
+.agent-formula .idea-grid p { margin-top:1.5vh; }
+
+.evidence-chart .statement { font-size:clamp(32px,3.5vw,56px); }
+.evidence-chart .kicker { margin-bottom:2vh; }
+.chart-caption { font-size:clamp(17px,1.5vw,24px); color:var(--papel-suave); margin-top:2.5vh; }
+.benchmark-chart { display:block; width:100%; max-height:42vh; margin-top:1.5vh; }
+.chart-footnote { font-size:clamp(13px,1.15vw,18px); color:var(--papel-suave); margin-top:1vh; }
+.evidence-chart .src-line { margin-top:1.4vh; }
+.evidence-chart a { color:var(--acento); }
