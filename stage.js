@@ -1,4 +1,4 @@
-/* Controlador de la presentación: teclado, clic, pasos, capítulos y temporizador. El contenido vive en el HTML. */
+/* Controlador de la presentación: teclado, clic, pasos y capítulos. El contenido vive en el HTML. */
 (() => {
   'use strict';
   const slides = [...document.querySelectorAll('.slide')];
@@ -53,25 +53,7 @@
   jump.addEventListener('submit', e => { e.preventDefault(); if (jump.reportValidity()) { chapters.close(); go(Number(jump.querySelector('input').value) - 1); } });
   chapters.append(jump);
   const help = dialog('shortcuts', 'Atajos del presentador');
-  help.insertAdjacentHTML('beforeend', '<dl class="shortcuts"><dt>→ / Espacio</dt><dd>Siguiente paso o diapositiva</dd><dt>←</dt><dd>Paso o diapositiva anterior</dd><dt>Inicio / Fin</dt><dd>Primera / última</dd><dt>G</dt><dd>Índice y salto a una diapositiva</dd><dt>T</dt><dd>Temporizador: empezar / pausar</dd><dt>R</dt><dd>Temporizador: reiniciar</dd><dt>F</dt><dd>Pantalla completa</dd><dt>B / .</dt><dd>Pantalla en negro</dd><dt>M</dt><dd>Animación sí / no</dd><dt>Clic</dt><dd>Derecha: avanza. 20 % izquierdo: retrocede.</dd></dl>');
-
-  /* Temporizador de dinámicas */
-  const fmt = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-  document.querySelectorAll('.reloj').forEach(r => {
-    const total = Number(r.dataset.min) * 60; let left = total, timer = null;
-    r.innerHTML = `<span class="t">${fmt(total)}</span><button type="button" data-t="go">Empezar</button><button type="button" class="sec" data-t="reset">Reiniciar</button>`;
-    const t = r.querySelector('.t'), go = r.querySelector('[data-t="go"]');
-    const paint = () => { t.textContent = fmt(left); };
-    r.toggle = () => {
-      if (timer) { clearInterval(timer); timer = null; r.classList.remove('corriendo'); go.textContent = 'Seguir'; return; }
-      if (left <= 0) left = total;
-      r.classList.remove('fin'); r.classList.add('corriendo'); go.textContent = 'Pausar';
-      timer = setInterval(() => { left -= 1; paint(); if (left <= 0) { clearInterval(timer); timer = null; r.classList.remove('corriendo'); r.classList.add('fin'); go.textContent = 'Empezar'; } }, 1000);
-    };
-    r.reset = () => { clearInterval(timer); timer = null; left = total; paint(); r.classList.remove('corriendo', 'fin'); go.textContent = 'Empezar'; };
-    go.addEventListener('click', () => r.toggle());
-    r.querySelector('[data-t="reset"]').addEventListener('click', () => r.reset());
-  });
+  help.insertAdjacentHTML('beforeend', '<dl class="shortcuts"><dt>→ / Espacio</dt><dd>Siguiente paso o diapositiva</dd><dt>←</dt><dd>Paso o diapositiva anterior</dd><dt>Inicio / Fin</dt><dd>Primera / última</dd><dt>G</dt><dd>Índice y salto a una diapositiva</dd><dt>F</dt><dd>Pantalla completa</dd><dt>B / .</dt><dd>Pantalla en negro</dd><dt>M</dt><dd>Animación sí / no</dd><dt>Clic</dt><dd>Derecha: avanza. 20 % izquierdo: retrocede.</dd></dl>');
 
   function setMotion(off) {
     motionOff = off; root.classList.toggle('motion-off', off);
@@ -121,7 +103,6 @@
     if (chapters.open || help.open || e.target.closest('input,textarea,select') || e.altKey || e.ctrlKey || e.metaKey || e.repeat) return;
     if (e.target.closest('button') && [' ', 'Enter'].includes(e.key)) return;
     if (document.body.classList.contains('is-blackout')) { if (['b', 'B', '.', 'Escape'].includes(e.key)) document.body.classList.remove('is-blackout'); return; }
-    const reloj = slides[index].querySelector('.reloj');
     if (['ArrowRight', ' ', 'PageDown', 'Enter'].includes(e.key)) { e.preventDefault(); advance(1); }
     else if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); advance(-1); }
     else if (e.key === 'Home') { e.preventDefault(); go(0); }
@@ -129,8 +110,6 @@
     else if (e.key.toLowerCase() === 'f') fullscreen();
     else if (e.key.toLowerCase() === 'g') chapters.showModal();
     else if (e.key.toLowerCase() === 'm') setMotion(!motionOff);
-    else if (e.key.toLowerCase() === 't' && reloj) reloj.toggle();
-    else if (e.key.toLowerCase() === 'r' && reloj) reloj.reset();
     else if (['b', 'B', '.'].includes(e.key)) document.body.classList.add('is-blackout');
     else if (e.key === '?') help.showModal();
   });
