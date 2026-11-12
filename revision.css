@@ -166,7 +166,7 @@ a:focus-visible { outline:2px solid currentColor; outline-offset:5px; }
 }
 
 .travel-photo { background:linear-gradient(90deg,rgba(4,14,18,.76),rgba(4,14,18,.38) 53%,rgba(4,14,18,.04) 80%),var(--travel-image) center/cover; color:#fff; }
-.chat-era { --travel-image:url('img/oficina-2022.jpg'); }
+.chat-era { --travel-image:url('img/oficina-2024.jpg'); }
 .today-era { --travel-image:url('img/oficina-hoy.jpg'); }
 .future-era { --travel-image:url('img/oficina-2028-limpia.jpg'); }
 .travel-photo .kicker,.travel-photo .year { color:#f1d39a; }
