@@ -12,7 +12,7 @@ Los ejemplos económicos y el correo de demostración son ficticios. Las gráfic
 
 ## Versión revisada
 
-55 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
+60 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
 
 No hay temporizadores ni atajos de reloj. El avance revela primero las respuestas de cada ejercicio y después cambia de diapositiva. Los ejemplos de costes son ficticios; las fuentes y los cálculos están en el guion.
 
@@ -22,3 +22,7 @@ No hay temporizadores ni atajos de reloj. El avance revela primero las respuesta
 - `img/oficina-2006.jpg`: ilustración generada con IA para la apertura. No representa oficinas reales de Loreto.
 
 Brief de la imagen: fotografía editorial horizontal de una oficina española en 2006, sin personas ni marcas, con monitor antiguo, teléfono fijo, informes impresos y carpetas; luz cálida, objetos a la derecha y espacio oscuro libre a la izquierda para el título. La imagen final se recortó a 16:9 y se convirtió a JPEG.
+
+## Cierre visual
+
+«Dioses de arena»: cinco ilustraciones reutilizadas de la presentación de Ferrovial (arena, silicio, transistor, circuito integrado y GPU), convertidas a JPEG para la web. Son imágenes generadas con IA, no fotografías históricas. La secuencia y el cierre ocupan unos tres minutos dentro del horario previsto.
