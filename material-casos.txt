@@ -1,39 +1,37 @@
-GRUPO LORETO · MATERIAL DIDÁCTICO FICTICIO
-Todos los documentos y datos siguientes son inventados para el taller. No son documentos de Loreto ni describen productos o derechos reales.
+GRUPO LORETO · GUÍA PARA DESARROLLAR LOS TRES CASOS
+Sesión 1 · 13 de noviembre de 2026
 
-CASO A · PREPARACIÓN DEL COMITÉ
-Proceso orientativo a validar: recopilar informes, contrastar argumentos, preparar el dossier y debatir.
-Dificultad a explorar: información dispersa y perspectivas diferentes. Confirmad qué problema merece resolver vuestro equipo.
-Pregunta: ¿qué habría que comprobar antes de mantener una posición en renta fija corporativa europea?
-R1 · Informe ficticio de una gestora · §1: Los diferenciales son estrechos. Preferimos duración media.
-R2 · Informe ficticio de un banco · §2: Esperamos una ampliación de diferenciales en 2027.
-R3 · Informe ficticio de un supervisor · §1: Vemos riesgo de refinanciación en emisores de menor calidad.
-No se proporcionan posiciones de cartera ni previsiones de rentabilidad.
+Una ficha impresa por equipo. El objetivo es diseñar y evaluar un uso de IA en un proceso real. No hay una solución oculta ni documentos ficticios que debáis resolver.
+Los procesos siguientes son puntos de partida: concretad cómo trabajáis hoy y qué merece mejorar.
 
-CASO B · ASISTENCIA AL GESTOR
-Proceso orientativo a validar: entender consulta, localizar norma, comprobar expediente, preparar y validar respuesta.
-Dificultad a explorar: localizar la norma aplicable y preparar una respuesta sin dar por conocidos datos que faltan.
-Consulta ficticia: Me jubilo en marzo. ¿Puedo cobrar una parte de una vez y el resto como renta? ¿Cuánto me quedaría?
-Reglamento ficticio, artículo 18: Las modalidades contempladas son capital, renta o combinación de ambas. Su aplicación requiere verificar las condiciones del expediente y la versión aplicable del reglamento.
-Anexo II ficticio: El importe debe calcularse con el historial de aportaciones y los parámetros del proceso autorizado. Este ejercicio no incluye los datos necesarios para calcularlo.
+EQUIPO A · PREPARAR EL COMITÉ · LORETO INVERSIONES
+Proceso de partida: recopilar informes, contrastar análisis y preparar el dossier del comité.
+Oportunidad a explorar: ayudar a preparar una síntesis útil para la decisión.
+Concretad qué parte del trabajo haría la IA, qué documentos necesitaría, qué entregaría y qué revisaría o decidiría el equipo de inversiones.
 
-CASO C · SEGUIMIENTO DE RECOMENDACIONES
-Proceso orientativo a validar: pedir evidencias, revisar pendientes, actualizar estados y preparar informe.
-Dificultad a explorar: información incompleta y estados pendientes de comprobar.
-Ref | Recomendación | Estado consignado | Evidencia aportada
-R-01 | Actualizar política de conflictos de interés | Cerrada | Acta ficticia 03/2026
-R-02 | Revisar contrato de proveedor en la nube | En curso | No aportada
-R-03 | Formación en prevención de blanqueo | Cerrada | No aportada
-R-04 | Actualizar registro de tratamientos | Vencida | Plazo ficticio 30/09/2026
-R-05 | Inventario de usos de IA | Abierta | No aportada
+EQUIPO B · RESPONDER AL MUTUALISTA · LORETO MUTUA
+Proceso de partida: entender la consulta, localizar información y preparar la respuesta.
+Oportunidad a explorar: ayudar al gestor a responder mejor.
+Concretad qué consultas abordaríais, qué fuentes autorizadas utilizaríais, qué tarea asumiría la IA y cuándo intervendría una persona.
 
-TRABAJO DE CADA EQUIPO · 22 MINUTOS
-Aplicad los conceptos a vuestro caso y completad la ficha impresa.
-1. Corregid el proceso orientativo y concretad una dificultad.
-2. Proponed una tarea para la IA, su entrada y su resultado.
-3. Definid qué revisa y decide la persona.
-4. Elegid una medida de mejora frente al trabajo actual, incluida la revisión.
-5. Identificad riesgos, controles, permisos y datos que faltan.
-6. Asignad responsable y siguiente paso para el taller del día 20.
+EQUIPO C · SEGUIR RECOMENDACIONES · GRUPO LORETO
+Proceso de partida: reunir evidencias, actualizar estados y preparar el seguimiento de recomendaciones.
+Oportunidad a explorar: hacer el seguimiento más ágil y trazable.
+Concretad qué parte podría apoyar la IA, qué registros necesitaría, qué resultado entregaría y quién validaría estados y cierres.
 
-Puesta en común: tres minutos por equipo, incluida una pregunta breve de otro grupo. Los tres casos pueden avanzar; no se elige un ganador.
+LA FICHA ES EL ENTREGABLE
+01. Problema y usuario: situación real, frecuencia y esfuerzo actual.
+02. Resultado esperado: un entregable concreto.
+03. Información necesaria: fuentes, ubicación, vigencia y acceso.
+04. Tarea de la IA: prepara, recomienda o ejecuta.
+05. Decisiones que conserva la persona.
+06. Beneficio y cómo medirlo frente al proceso actual, incluida la revisión.
+07. Errores relevantes y controles: detección, corrección y registro.
+08. Responsable: una persona.
+09. Información pendiente: lo que realmente necesitéis averiguar para el día 20. No se presupone que falten datos.
+10. Decisión provisional y siguiente paso: probar, preparar o aplazar.
+
+PUESTA EN COMÚN
+Tres minutos por equipo, incluida una pregunta de otro grupo.
+Compartid la mejora, su medida y las condiciones para probarla.
+Los tres casos pueden avanzar. Cada equipo deja un siguiente paso para el taller del 20 de noviembre.

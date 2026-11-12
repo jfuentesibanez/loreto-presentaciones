@@ -7,17 +7,17 @@ Dónde empezar con la IA: criterios, riesgos y gobierno. 13 de noviembre de 2026
 
 Dinámicas en pantalla: matriz valor/viabilidad arrastrable y hoja de cierre editable. Lo escrito se guarda en el navegador del presentador; «Copiar resumen de la sesión» lo lleva al portapapeles para pasarlo al taller del día 20.
 
-Todos los ejemplos son ficticios. Sin dependencias externas: funciona sin conexión abriendo `index.html`.
+Los ejemplos económicos y el correo de demostración son ficticios. Las gráficas citan datos publicados. Sin dependencias externas: funciona sin conexión abriendo `index.html`.
 
 
 ## Versión revisada
 
-50 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye una gráfica de datos externos de Vectara sobre alucinación al resumir documentos. Once dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
+54 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
 
 No hay temporizadores ni atajos de reloj. El avance revela primero las respuestas de cada ejercicio y después cambia de diapositiva. Los ejemplos de costes son ficticios; las fuentes y los cálculos están en el guion.
 
 - `guion.html`: mapa de la sesión, respuestas, precisiones técnicas y fuentes.
-- `material-casos.txt`: fuentes y datos ficticios para ensayar los casos.
+- `material-casos.txt`: guía de los tres casos, alineada con los diez apartados de la ficha impresa.
 - `revision.css`: ajustes de contraste, tamaño, ritmo visual y transiciones. Se respeta la opción de reducir movimiento.
 - `img/oficina-2006.jpg`: ilustración generada con IA para la apertura. No representa oficinas reales de Loreto.
 
