@@ -4,7 +4,7 @@
   const slides = [...document.querySelectorAll('.slide')];
   const media = matchMedia('(prefers-reduced-motion: reduce)');
   const root = document.documentElement;
-  let index = -1, motionOff = media.matches, controlsTimer;
+  let index = -1, viaje = null, motionOff = media.matches, controlsTimer;
 
   const nav = document.createElement('nav');
   nav.className = 'deck-controls';
@@ -55,10 +55,29 @@
   const help = dialog('shortcuts', 'Atajos del presentador');
   help.insertAdjacentHTML('beforeend', '<dl class="shortcuts"><dt>→ / Espacio</dt><dd>Siguiente paso o diapositiva</dd><dt>←</dt><dd>Paso o diapositiva anterior</dd><dt>Inicio / Fin</dt><dd>Primera / última</dd><dt>G</dt><dd>Índice y salto a una diapositiva</dd><dt>F</dt><dd>Pantalla completa</dd><dt>B / .</dt><dd>Pantalla en negro</dd><dt>M</dt><dd>Animación sí / no</dd><dt>Clic</dt><dd>Derecha: avanza. 20 % izquierdo: retrocede.</dd></dl>');
 
+  /* Máquina del tiempo: escena 3D o, sin animación, secuencia de imágenes */
+  const travelSlide = slides.find(s => s.classList.contains('viaje'));
+  const fallback = document.createElement('div'); fallback.className = 'travel-fallback';
+  travelSlide?.append(fallback);
+  const eras = [['2026', 'city'], ['1750', 'ship'], ['12.000 a. C.', 'wheat'], ['100.000 a. C.', 'fire'], ['2026', 'city'], ['2045', 'future']];
+  let eraIndex = 0, webglFailed = false;
+  if (travelSlide) [...new Set(eras.map(e => e[1]))].forEach(n => { new Image().src = `img/viaje-${n}.jpg`; });
+  function paintEra() {
+    fallback.textContent = eras[eraIndex][0];
+    fallback.style.backgroundImage = `linear-gradient(0deg,#0d1a1fbb,#0d1a1f55),url('img/viaje-${eras[eraIndex][1]}.jpg')`;
+  }
+  function enterTravel() {
+    if (!travelSlide) return;
+    if (motionOff || webglFailed || !window.THREE || !window.initViaje) { travelSlide.classList.add('fallback'); paintEra(); return; }
+    try { if (!viaje) viaje = window.initViaje(travelSlide); travelSlide.classList.remove('fallback'); viaje.enter(); }
+    catch (error) { webglFailed = true; travelSlide.classList.add('fallback'); paintEra(); console.warn('Máquina del tiempo sin 3D; se usan imágenes.', error); }
+  }
+
   function setMotion(off) {
     motionOff = off; root.classList.toggle('motion-off', off);
     const b = nav.querySelector('[data-action="motion"]'); b.setAttribute('aria-pressed', String(!off));
     b.textContent = off ? 'Sin animación' : 'Animación';
+    if (travelSlide && slides[index] === travelSlide) { if (viaje) viaje.leave(); enterTravel(); }
   }
   media.addEventListener('change', e => setMotion(e.matches));
   setMotion(motionOff);
@@ -66,10 +85,12 @@
   function go(n, updateHash = true) {
     n = Math.max(0, Math.min(slides.length - 1, Math.floor(n)));
     if (!Number.isFinite(n) || n === index) return;
+    if (viaje && slides[index] === travelSlide) viaje.leave();
     index = n;
     slides.forEach((s, k) => { s.classList.toggle('on', k === index); s.setAttribute('aria-hidden', String(k !== index)); s.inert = k !== index; });
     const s = slides[index];
     document.body.classList.toggle('light-slide', s.matches('.chapter,.question,.future:not(.travel-photo)'));
+    if (s === travelSlide) enterTravel();
     document.getElementById('barra').style.width = `${(index + 1) / slides.length * 100}%`;
     document.getElementById('pag').textContent = `${String(index + 1).padStart(2, '0')} / ${slides.length}`;
     status.textContent = `Diapositiva ${index + 1} de ${slides.length}. ${title(s, index)}`;
@@ -83,7 +104,15 @@
     if (!target) return false;
     target.classList.toggle('on', dir > 0); return true;
   }
-  const advance = dir => { if (!step(dir)) go(index + dir); };
+  function advance(dir) {
+    if (travelSlide && slides[index] === travelSlide) {
+      if (travelSlide.classList.contains('fallback')) {
+        const next = eraIndex + dir;
+        if (next >= 0 && next < eras.length) { eraIndex = next; paintEra(); return; }
+      } else if (viaje && viaje.handle(dir)) return;
+    }
+    if (!step(dir)) go(index + dir);
+  }
   function showControls() {
     document.body.classList.add('controls-visible'); clearTimeout(controlsTimer);
     controlsTimer = setTimeout(() => document.body.classList.remove('controls-visible'), 2200);
@@ -122,6 +151,10 @@
   document.addEventListener('focusin', showControls);
   const fromHash = () => { const h = location.hash.slice(1); go(/^\d+$/.test(h) ? Number(h) - 1 : 0); };
   window.addEventListener('hashchange', fromHash);
+  document.addEventListener('visibilitychange', () => {
+    if (!viaje || slides[index] !== travelSlide) return;
+    if (document.hidden) viaje.leave(); else if (!motionOff) viaje.enter();
+  });
   fromHash();
 })();
 
