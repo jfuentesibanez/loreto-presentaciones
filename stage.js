@@ -44,7 +44,7 @@
   slides.forEach((slide, n) => {
     if (!slide.dataset.chapter) return;
     const b = document.createElement('button'); b.type = 'button';
-    b.textContent = `${String(n + 1).padStart(2, '0')}  /  ${slide.dataset.chapter}`;
+    b.innerHTML = `<span class="ch"></span><span class="pg">${String(n + 1).padStart(2, '0')}</span>`; b.querySelector('.ch').textContent = slide.dataset.chapter;
     b.addEventListener('click', () => { chapters.close(); go(n); }); links.append(b);
   });
   chapters.append(links);
