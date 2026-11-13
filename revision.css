@@ -513,3 +513,12 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .vt-fig { margin:0; }
 .vt-fig img { display:block; width:100%; max-height:78vh; object-fit:contain; background:#fff; border-radius:6px; padding:1.2vh 1vw; }
 @media(max-width:820px) { .vectara-top .inner { grid-template-columns:1fr; } }
+
+/* Sobrecoste de tokens por idioma */
+.idioma-tokens .inner { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:3.5vw; align-items:center; max-width:1500px; }
+.idioma-tokens .statement { font-size:clamp(30px,3.2vw,52px); }
+.idioma-tokens .answer-panel { margin-top:3.5vh; font-size:clamp(18px,1.6vw,26px); }
+.idioma-tokens .src-line { margin-top:2.4vh; }
+.it-fig { margin:0; }
+.it-fig img { display:block; width:100%; max-height:76vh; object-fit:contain; background:#fff; border-radius:6px; padding:1vh .8vw; }
+@media(max-width:820px) { .idioma-tokens .inner { grid-template-columns:1fr; } }
