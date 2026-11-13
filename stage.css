@@ -41,7 +41,7 @@ body { font-family: var(--sans); background: var(--fondo); color: var(--papel); 
 .cover .sub { border-top: 1px solid rgba(255,255,255,.25); padding-top: 2.2vh; margin-top: 5vh; width: fit-content; min-width: 320px; color: #dfe6e8; }
 .olas { position: absolute; right: -4vw; bottom: -2vh; width: 62vw; z-index: 1; opacity: .9; pointer-events: none; }
 .marca { position: absolute; right: 8vw; top: 8vh; z-index: 3; height: clamp(46px, 6vh, 70px); }
-.marca-nc { position: absolute; right: 8vw; bottom: 9vh; z-index: 3; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--papel-suave); }
+.cover .firma { margin-top: 3.2vh; font-size: clamp(13px, 1.05vw, 17px); letter-spacing: .2em; text-transform: uppercase; color: #dfe6e8; }
 
 /* Capítulos: luz y aire */
 .chapter { background: var(--claro); color: var(--tinta); }
