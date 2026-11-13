@@ -1,23 +1,26 @@
-GRUPO LORETO · GUÍA PARA DESARROLLAR LOS TRES CASOS
+GRUPO LORETO · GUÍA PARA ELEGIR Y DESARROLLAR UN CASO
 Sesión 1 · 13 de noviembre de 2026
 
-Una ficha impresa por equipo. El objetivo es diseñar y evaluar un uso de IA en un proceso real. No hay una solución oculta ni documentos ficticios que debáis resolver.
+Una ficha impresa por equipo. Elegid uno de los tres casos propuestos o un caso propio de vuestro trabajo. Trabajad un solo caso con suficiente concreción. El objetivo es diseñar y evaluar un uso de IA en un proceso real. No hay una solución oculta ni documentos ficticios que debáis resolver.
 Los procesos siguientes son puntos de partida: concretad cómo trabajáis hoy y qué merece mejorar.
 
-EQUIPO A · PREPARAR EL COMITÉ · LORETO INVERSIONES
+CASO PROPUESTO A · PREPARAR EL COMITÉ · LORETO INVERSIONES
 Proceso de partida: recopilar informes, contrastar análisis y preparar el dossier del comité.
 Oportunidad a explorar: ayudar a preparar una síntesis útil para la decisión.
 Concretad qué parte del trabajo haría la IA, qué documentos necesitaría, qué entregaría y qué revisaría o decidiría el equipo de inversiones.
 
-EQUIPO B · RESPONDER AL MUTUALISTA · LORETO MUTUA
+CASO PROPUESTO B · RESPONDER AL MUTUALISTA · LORETO MUTUA
 Proceso de partida: entender la consulta, localizar información y preparar la respuesta.
 Oportunidad a explorar: ayudar al gestor a responder mejor.
 Concretad qué consultas abordaríais, qué fuentes autorizadas utilizaríais, qué tarea asumiría la IA y cuándo intervendría una persona.
 
-EQUIPO C · SEGUIR RECOMENDACIONES · GRUPO LORETO
+CASO PROPUESTO C · SEGUIR RECOMENDACIONES · GRUPO LORETO
 Proceso de partida: reunir evidencias, actualizar estados y preparar el seguimiento de recomendaciones.
 Oportunidad a explorar: hacer el seguimiento más ágil y trazable.
 Concretad qué parte podría apoyar la IA, qué registros necesitaría, qué resultado entregaría y quién validaría estados y cierres.
+
+SI ELEGÍS UN CASO PROPIO
+Describid una tarea real: quién la hace, con qué información y qué resultado necesita. Evitad temas amplios como «mejorar la comunicación». Aplicad los mismos diez campos de la ficha.
 
 LA FICHA ES EL ENTREGABLE
 01. Problema y usuario: situación real, frecuencia y esfuerzo actual.
@@ -34,4 +37,4 @@ LA FICHA ES EL ENTREGABLE
 PUESTA EN COMÚN
 Tres minutos por equipo, incluida una pregunta de otro grupo.
 Compartid la mejora, su medida y las condiciones para probarla.
-Los tres casos pueden avanzar. Cada equipo deja un siguiente paso para el taller del 20 de noviembre.
+Los casos elegidos pueden avanzar con distinto alcance y ritmo. Cada equipo deja un siguiente paso para el taller del 20 de noviembre.

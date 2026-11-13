@@ -394,6 +394,41 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 }
 .chapter-image::after { background:linear-gradient(90deg,rgba(8,22,27,.46),transparent 65%),linear-gradient(0deg,rgba(8,22,27,.85),transparent 15%); }
 
+/* Orientación de la sesión: mismo número y nombre en índice y separadores. */
+.session-agenda .statement { font-size:clamp(38px,4.5vw,72px); }
+.agenda-list { display:grid; grid-template-columns:repeat(3,1fr); column-gap:4vw; row-gap:5vh; margin-top:6vh; }
+.agenda-item { display:flex; align-items:flex-start; gap:1.3vw; padding-top:2vh; border-top:1px solid #47606a; text-decoration:none; color:var(--papel); }
+.agenda-item > span { color:#f1d39a; font-size:clamp(24px,2.3vw,37px); font-weight:500; }
+.agenda-item b { display:block; font-weight:500; font-size:clamp(26px,2.6vw,42px); line-height:1.15; }
+.agenda-item p { color:var(--papel-suave); margin-top:1.5vh; font-size:clamp(18px,1.55vw,25px); line-height:1.4; }
+.agenda-item:hover,.agenda-item:focus-visible { color:var(--acento); border-color:var(--acento); }
+.agenda-footer { display:flex; justify-content:space-between; gap:2vw; margin-top:5vh; padding-top:2vh; border-top:1px solid var(--linea); color:var(--papel-suave); font-size:clamp(16px,1.35vw,22px); }
+.chapter-image .kicker { letter-spacing:.13em; }
+.chapter-coste .gigante,.chapter-gobierno .gigante,.chapter-practica .gigante { font-size:clamp(40px,4.8vw,77px); }
+@media(max-width:820px) { .agenda-list { grid-template-columns:repeat(2,1fr); gap:2vh 4vw; margin-top:3vh; }.agenda-footer { margin-top:3vh; } }
+
+/* Pregunta de apertura: foco en la decisión, sin signo decorativo. */
+.focus-question .statement { font-size:clamp(42px,5.2vw,83px); line-height:1.12; max-width:1200px; }
+.question-criteria { display:flex; align-items:center; gap:1.2em; margin-top:5vh; padding-top:3vh; border-top:1px solid #b8c6c8; color:#216477; font-size:clamp(22px,2.3vw,37px); font-weight:500; }
+.question-criteria i { font-style:normal; color:#80a7b0; }
+@media(max-width:640px) { .question-criteria { gap:.6em; font-size:20px; } .focus-question .statement { font-size:38px; } }
+
+/* Construcción del agente: misma navegación por pasos que el resto del deck. */
+.agent-build .agent-core { grid-column:2; grid-row:2; }
+.agent-build .agent-memory { grid-column:1; grid-row:2; }
+.agent-build .agent-mission { grid-row:1; }
+.agent-build .agent-tools { grid-column:3; grid-row:2; }
+.agent-build .agent-map { border-color:transparent; transition:border-color .24s ease; }
+.agent-build .step:not(.on), .agent-build .statement span { visibility:hidden; }
+.agent-build .statement span { opacity:0; transition:opacity .24s ease; }
+.agent-build:has(.agent-memory.on) .formula-memory,
+.agent-build:has(.agent-mission.on) .formula-mission,
+.agent-build:has(.agent-tools.on) .formula-tools { visibility:visible; opacity:1; }
+.agent-build .agent-boundary.step { transform:translateX(-50%); }
+.agent-build:has(.agent-boundary.on) .agent-map { border-color:#55717a; }
+@media(prefers-reduced-motion:reduce) { .agent-build .step, .agent-build .statement span, .agent-build .agent-map { transition:none; } }
+@media print { .agent-build .step, .agent-build .statement span { visibility:visible !important; opacity:1 !important; } .agent-build .agent-map { border-color:#55717a; } }
+
 /* Gráfica de evolución (Epoch AI) */
 .evolucion { padding-top:4vh; padding-bottom:6vh; }
 .evolucion .inner { display:grid; grid-template-columns:1fr minmax(0, 66vh); gap:4vw; align-items:center; max-width:1400px; }
@@ -430,3 +465,4 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .control-table td.si { color:var(--coral); }
 .control-table td.no { color:var(--verde); }
 @media(max-width:820px) { .inj-grid { grid-template-columns:1fr; } }
+
