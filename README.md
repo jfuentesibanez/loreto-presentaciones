@@ -12,7 +12,7 @@ Los ejemplos económicos y el correo de demostración son ficticios. Las gráfic
 
 ## Versión revisada
 
-62 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
+63 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
 
 No hay temporizadores ni atajos de reloj. El avance revela primero las respuestas de cada ejercicio y después cambia de diapositiva. Los ejemplos de costes son ficticios; las fuentes y los cálculos están en el guion.
 

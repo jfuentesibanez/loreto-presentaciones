@@ -393,3 +393,14 @@ html.motion-off .sand-sequence.on > img { animation:none; }
  .evidence-chain { gap:1vw; }.evidence-paper { padding:2vh 1vw; }
 }
 .chapter-image::after { background:linear-gradient(90deg,rgba(8,22,27,.46),transparent 65%),linear-gradient(0deg,rgba(8,22,27,.85),transparent 15%); }
+
+/* Gráfica de evolución (Epoch AI) */
+.evolucion { padding-top:4vh; padding-bottom:6vh; }
+.evolucion .inner { display:grid; grid-template-columns:1fr minmax(0, 66vh); gap:4vw; align-items:center; max-width:1400px; }
+.evolucion .statement { font-size:clamp(32px,3.6vw,58px); line-height:1.12; }
+.evolucion .evo-nota { margin-top:3vh; color:var(--papel-suave); font-size:clamp(17px,1.4vw,22px); line-height:1.4; max-width:30em; }
+.evolucion .src-line { margin-top:2.4vh; }
+.evolucion .src-line a { color:var(--acento); }
+.evo-fig { margin:0; }
+.evo-fig img { display:block; width:100%; max-height:84vh; object-fit:contain; border-radius:6px; }
+@media(max-width:820px) { .evolucion .inner { grid-template-columns:1fr; } .evo-fig img { max-height:none; } }
