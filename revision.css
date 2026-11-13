@@ -366,7 +366,7 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .measurement-flow { display:flex; align-items:center; justify-content:space-between; margin-top:6vh; gap:1vw; font-size:clamp(22px,2.4vw,38px); }
 .measurement-flow span { border-bottom:3px solid var(--acento); padding:1vh 0 2vh; flex:1; text-align:center; }
 .measurement-flow i { font-style:normal; color:#6e8b94; }
-.measurement-bracket { border:1px solid #63828b; border-top:0; margin-top:1vh; height:4vh; display:flex; align-items:flex-end; justify-content:center; font-size:14px; letter-spacing:.15em; color:var(--acento); padding-top:1vh; }
+.measurement-bracket { border:1px solid #63828b; border-top:0; margin-top:1vh; height:4vh; display:flex; align-items:flex-end; justify-content:center; font-size:clamp(14px,1.15vw,18px); letter-spacing:.06em; color:var(--acento); padding-top:1vh; }
 .measurement-bottom { display:grid; grid-template-columns:.8fr 1.2fr; gap:6vw; margin-top:5vh; }
 .measurement-bottom b { display:block; font-size:clamp(23px,2.2vw,35px); font-weight:500; margin-bottom:2vh; }
 .measurement-bottom p,.fraction { font-size:clamp(18px,1.65vw,26px); color:var(--papel-suave); }
