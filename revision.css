@@ -404,7 +404,7 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .agenda-item:hover,.agenda-item:focus-visible { color:var(--acento); border-color:var(--acento); }
 .agenda-footer { display:flex; justify-content:space-between; gap:2vw; margin-top:5vh; padding-top:2vh; border-top:1px solid var(--linea); color:var(--papel-suave); font-size:clamp(16px,1.35vw,22px); }
 .chapter-image .kicker { letter-spacing:.13em; }
-.chapter-coste .gigante,.chapter-gobierno .gigante,.chapter-practica .gigante { font-size:clamp(40px,4.8vw,77px); }
+.chapter-coste .gigante,.chapter-gobierno .gigante,.chapter-cautelas .gigante,.chapter-practica .gigante { font-size:clamp(40px,4.8vw,77px); }
 @media(max-width:820px) { .agenda-list { grid-template-columns:repeat(2,1fr); gap:2vh 4vw; margin-top:3vh; }.agenda-footer { margin-top:3vh; } }
 
 /* Pregunta de apertura: foco en la decisión, sin signo decorativo. */
@@ -466,3 +466,10 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .control-table td.no { color:var(--verde); }
 @media(max-width:820px) { .inj-grid { grid-template-columns:1fr; } }
 
+
+/* Recorrido en siete bloques */
+@media(min-width:821px) {
+  .agenda-list { grid-template-columns:repeat(4,1fr); column-gap:3vw; row-gap:4.5vh; margin-top:5vh; }
+  .agenda-item b { font-size:clamp(22px,2.1vw,34px); }
+  .agenda-item p { font-size:clamp(16px,1.3vw,21px); }
+}
