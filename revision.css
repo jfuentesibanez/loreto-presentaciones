@@ -404,3 +404,29 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .evo-fig { margin:0; }
 .evo-fig img { display:block; width:100%; max-height:84vh; object-fit:contain; border-radius:6px; }
 @media(max-width:820px) { .evolucion .inner { grid-template-columns:1fr; } .evo-fig img { max-height:none; } }
+
+/* Inyección de instrucciones, paso a paso */
+.injection-demo .statement { font-size:clamp(30px,3.2vw,52px); }
+.inj-grid { display:grid; grid-template-columns:1.05fr 1fr; gap:3.5vw; align-items:center; margin-top:3.5vh; }
+.injection-demo .mail-example { margin-top:0; background:#f4f3ef; color:#17191b; border-left:0; border-radius:6px; padding:0; overflow:hidden; font-size:clamp(18px,1.6vw,26px); }
+.mail-head { display:flex; flex-direction:column; gap:.3em; padding:1.6vh 1.6vw; background:#e4e3dd; font-size:clamp(14px,1.15vw,18px); color:#4a5357; }
+.mail-head b { color:#17191b; font-weight:600; margin-right:.3em; }
+.injection-demo .mail-example p { padding:2vh 1.6vw 0; line-height:1.4; }
+.hidden-order { margin:2vh 1.6vw 2.2vh; padding:1.4vh 1.2vw; border:2px dashed #c4402a; background:#fbe3dc; color:#b3361f; font-weight:600; font-size:.88em; line-height:1.35; }
+.hidden-order small { display:block; margin-bottom:.5vh; font-size:.62em; letter-spacing:.12em; text-transform:uppercase; }
+.inj-steps { list-style:none; display:flex; flex-direction:column; gap:1.4vh; padding:0; margin:0; }
+.inj-steps li { border-left:4px solid var(--linea); background:#13252c; padding:1.3vh 1.2vw; font-size:clamp(15px,1.25vw,20px); color:var(--papel-suave); line-height:1.35; }
+.inj-steps b { display:block; color:var(--papel); font-weight:600; font-size:1.12em; margin-bottom:.3vh; }
+.inj-steps li.mal { border-left-color:var(--coral); } .inj-steps li.mal b { color:var(--coral); }
+.inj-steps li.bien { border-left-color:var(--verde); } .inj-steps li.bien b { color:var(--verde); }
+
+/* Guardarraíles frente a harness */
+.control-comparison .statement { font-size:clamp(30px,3.3vw,54px); }
+.control-comparison .control-table { font-size:clamp(17px,1.55vw,25px); margin-top:3.5vh; }
+.control-comparison .control-table th { width:auto; }
+.control-comparison .control-table th:first-child { width:22%; }
+.control-comparison .control-table td:first-child { color:var(--papel-suave); font-size:.8em; letter-spacing:.04em; }
+.control-comparison .control-table td { padding:1.8vh 1.4vw 1.8vh 0; }
+.control-table td.si { color:var(--coral); }
+.control-table td.no { color:var(--verde); }
+@media(max-width:820px) { .inj-grid { grid-template-columns:1fr; } }
