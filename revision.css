@@ -473,3 +473,27 @@ html.motion-off .sand-sequence.on > img { animation:none; }
   .agenda-item b { font-size:clamp(22px,2.1vw,34px); }
   .agenda-item p { font-size:clamp(16px,1.3vw,21px); }
 }
+
+
+/* Tests de sala: votar, argumentar y revelar cada respuesta. */
+.live-test .statement { font-size:clamp(32px,3.7vw,59px); }
+.test-grid { display:grid; gap:2vw; margin-top:4vh; }
+.test-cols-2 { grid-template-columns:repeat(2,1fr); }
+.test-cols-3 { grid-template-columns:repeat(3,1fr); }
+.test-card { border-top:2px solid #4d7b87; background:#10262e; padding:2vh 1.6vw; }
+.test-number { color:#7da1ab; font-size:14px; letter-spacing:.12em; }
+.test-card h3 { font-size:clamp(21px,2.05vw,33px); font-weight:500; line-height:1.2; margin:1.2vh 0 0; }
+.test-answer { margin-top:2.4vh; border-top:1px solid #37545e; padding-top:1.5vh; }
+.test-answer b { display:block; color:#f1d39a; font-size:clamp(21px,1.9vw,30px); font-weight:500; }
+.test-answer p { color:var(--papel-suave); font-size:clamp(16px,1.4vw,22px); line-height:1.35; margin-top:1vh; }
+.live-test .step:not(.on) { visibility:hidden; }
+.test-options,.test-context { color:var(--papel-suave); font-size:clamp(16px,1.45vw,23px); line-height:1.5; margin-top:2vh; }
+.test-cols-3 .test-card { min-height:39vh; }
+.pilot-options { display:grid; grid-template-columns:repeat(3,1fr); gap:2vw; margin-top:3vh; }
+.pilot-options > div { border-top:2px solid #4d7b87; padding-top:2vh; font-size:clamp(21px,2vw,32px); line-height:1.25; }
+.pilot-options span { color:var(--acento); margin-right:.5em; }
+@media(max-width:680px) { .test-cols-2,.test-cols-3,.pilot-options { grid-template-columns:1fr; }.test-cols-3 .test-card { min-height:0; } }
+@media print { .live-test .step { visibility:visible !important; opacity:1 !important; transform:none !important; } }
+
+.permission-test .test-card:nth-child(1) .test-answer b { color:#8cd7b1; }
+.permission-test .test-card:nth-child(3) .test-answer b { color:#ff9c8d; }

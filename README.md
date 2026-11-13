@@ -12,7 +12,7 @@ Los ejemplos económicos y el correo de demostración son ficticios. Las gráfic
 
 ## Versión revisada
 
-65 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
+69 diapositivas. Una sesión de criterio y modelos mentales: tareas, conversación/flujos/agentes, fiabilidad, valor, tokenomics y gobierno. Incluye gráficas con datos de Vectara (alucinación en resúmenes) y Anthropic (consumo de agentes). Doce dilemas con revelación progresiva, cuatro tests de sala y una pregunta abierta de inicio. Los casos aparecen únicamente en el ejercicio final. La ficha existente se entrega impresa y no se proyecta.
 
 No hay temporizadores ni atajos de reloj. El avance revela primero las respuestas de cada ejercicio y después cambia de diapositiva. Los ejemplos de costes son ficticios; las fuentes y los cálculos están en el guion.
 
@@ -35,3 +35,13 @@ Siete diapositivas revisadas sin ampliar la sesión: dos aperturas con metáfora
 ## Recorrido y elección del caso
 
 Índice al inicio, seis separadores con número, nombre e imagen, y pausa visual. Cada equipo desarrolla una ficha con uno de los tres casos propuestos o un caso propio. La segunda página compara los casos elegidos por los equipos, sin predeterminar su contenido.
+
+## Tests de sala
+
+- 11: cuatro afirmaciones, verdadero/falso/depende.
+- 32: elegir métricas para tres tareas.
+- 48: semáforo de permisos.
+- 54: condiciones para empezar una prueba.
+
+Mano alzada, un argumento breve y revelado por clic. Las respuestas se ocultan hasta avanzar; flecha izquierda retrocede. Unos 12 minutos integrados en los bloques, conservando la sesión de tres horas y 45 minutos de práctica y cierre.
+
