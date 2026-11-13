@@ -497,3 +497,9 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 
 .permission-test .test-card:nth-child(1) .test-answer b { color:#8cd7b1; }
 .permission-test .test-card:nth-child(3) .test-answer b { color:#ff9c8d; }
+
+/* ¿IA o software de siempre? */
+.tool-choice .statement { font-size:clamp(32px,3.6vw,58px); }
+.tool-choice .idea-grid { margin-top:4.5vh; }
+.tool-choice .tc-si { display:block; margin-bottom:1.4vh; font-size:clamp(14px,1.15vw,18px); letter-spacing:.06em; text-transform:uppercase; color:var(--acento); line-height:1.35; }
+.tool-choice .idea-grid p { font-size:clamp(18px,1.55vw,25px); }
