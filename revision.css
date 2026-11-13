@@ -503,3 +503,13 @@ html.motion-off .sand-sequence.on > img { animation:none; }
 .tool-choice .idea-grid { margin-top:4.5vh; }
 .tool-choice .tc-si { display:block; margin-bottom:1.4vh; font-size:clamp(14px,1.15vw,18px); letter-spacing:.06em; text-transform:uppercase; color:var(--acento); line-height:1.35; }
 .tool-choice .idea-grid p { font-size:clamp(18px,1.55vw,25px); }
+
+/* Vectara top 25 */
+.vectara-top .inner { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:3.5vw; align-items:center; max-width:1500px; }
+.vectara-top .statement { font-size:clamp(30px,3.2vw,52px); }
+.vectara-top .vt-nota { margin-top:2.4vh; color:var(--papel-suave); font-size:clamp(16px,1.35vw,21px); line-height:1.4; }
+.vectara-top .vt-nota + .vt-nota { margin-top:1.4vh; }
+.vectara-top .src-line { margin-top:2.6vh; }
+.vt-fig { margin:0; }
+.vt-fig img { display:block; width:100%; max-height:78vh; object-fit:contain; background:#fff; border-radius:6px; padding:1.2vh 1vw; }
+@media(max-width:820px) { .vectara-top .inner { grid-template-columns:1fr; } }
